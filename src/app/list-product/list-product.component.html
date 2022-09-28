@@ -1,8 +1,19 @@
-<div class="card" style="width: 18rem;">
-  <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/f88c38f6-5eb3-4cd8-a509-08b59410875b/tee-shirt-sportswear-club-pour-bVD3j8.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<h1>{{title}}</h1>
+<div class="row">
+  <div class="col-md-3" *ngFor="let product of list">
+    <div class="card" style="width: 18rem;">
+      <img src="{{product.picture}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <p class="card-text">
+          description: {{product.description}}
+          <br>
+          price:{{product.price}}$
+        </p>
+        <button class="btn btn-sm btn-primary" >
+          like{{product.nbrLike}}
+        </button>
+      </div>
+    </div>
   </div>
 </div>
