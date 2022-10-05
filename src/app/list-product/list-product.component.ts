@@ -8,6 +8,7 @@ import {Product} from "../model/product";
 export class ListProductComponent implements OnInit {
   public title: String;
   public list: Product[];
+  priceMax: number;
   constructor() {
   }
   ngOnInit(): void {
@@ -25,7 +26,7 @@ export class ListProductComponent implements OnInit {
       {
         id: 12,
         title: 'T-shirt 2',
-        price: 28,
+        price: 18,
         nbrLike: 40,
         description: 'nice T-shirt',
         category: 'Women',

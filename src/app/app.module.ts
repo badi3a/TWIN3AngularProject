@@ -6,6 +6,16 @@ import { HeaderComponent } from './header/header.component';
 import { ListProductComponent } from './list-product/list-product.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListUserComponent } from './list-user/list-user.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { Routes, RouterModule } from '@angular/router';
+const ROUTES: Routes=[
+  {path:'product', component: ListProductComponent},
+  {path:'user',component: ListUserComponent},
+  {path:'home',component: HomeComponent},
+  {path:'contact',component: ContactComponent}
+]
 
 @NgModule({
   declarations: [
@@ -13,10 +23,14 @@ import { ListUserComponent } from './list-user/list-user.component';
     HeaderComponent,
     ListProductComponent,
     FooterComponent,
-    ListUserComponent
+    ListUserComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

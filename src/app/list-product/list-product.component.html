@@ -1,7 +1,12 @@
 <h1>{{title}}</h1>
+<form class="col-md-6">
+  <input type="number" [(ngModel)]="priceMax"
+  name="price" class="form-control" placeholder="search by price">
+</form>
+<br>
 <div class="row">
-  <div class="col-md-3" *ngFor="let product of list">
-    <div class="card" style="width: 18rem;"  >
+  <div class="col-md-3" *ngFor="let product of list" >
+    <div class="card" style="width: 18rem;" *ngIf="product.price<=priceMax || priceMax==null"> <!---filter--->
       <img src="{{product.picture}}" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{product.title}}</h5>
