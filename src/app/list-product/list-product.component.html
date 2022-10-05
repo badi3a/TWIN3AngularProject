@@ -7,7 +7,7 @@
         <h5 class="card-title">{{product.title}}</h5>
 
         <p class="card-text">
-          <strong>Description </strong> {{product.description}}
+          {{product.description}} <img src="assets/stock.jpg" class="stock btnBuy" *ngIf="product.quantity==0" >
           <br>
           <strong>price </strong>{{product.price}}$
         </p>
@@ -22,9 +22,7 @@
                 [disabled]="product.quantity==0">
           buy
         </button>
-        <span *ngIf="product.quantity==0" class="btnBuy">
-          out of stock!
-        </span>
+
 
       </div>
     </div>
