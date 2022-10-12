@@ -1,4 +1,4 @@
-import { User } from './../model/user';
+import { User } from '../../core/model/user';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
