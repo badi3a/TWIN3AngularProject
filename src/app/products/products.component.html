@@ -12,19 +12,27 @@
                           <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">all</span>
                       </a>
                   </li>
+                  <li class="nav-item">
+                    <a  routerLink="new" class="nav-link align-middle px-0" >
+                        <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">add Product</span>
+                    </a>
+                </li>
                   <li>
-                      <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                      <span href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                           <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">
-                            <b>category</b></span> </a>
+                            <b>category</b></span> </span>
                       <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                           <li class="w-100">
-                              <a  class="nav-link px-0"> <span class="d-none d-sm-inline">Women</span></a>
+                              <a  [routerLink]="['category','women']" class="nav-link px-0">
+                                <span class="d-none d-sm-inline">
+                                  Women</span>
+                                </a>
                           </li>
                           <li>
-                              <a class="nav-link px-0"> <span class="d-none d-sm-inline">Men</span></a>
+                              <a class="nav-link px-0" [routerLink]="['category','men']"> <span class="d-none d-sm-inline">Men</span></a>
                           </li>
                           <li>
-                            <a  class="nav-link px-0"> <span class="d-none d-sm-inline">kids</span> </a>
+                            <a  class="nav-link px-0" [routerLink]="['category','kids']"> <span class="d-none d-sm-inline">kids</span> </a>
                         </li>
                       </ul>
                   </li>
@@ -48,7 +56,7 @@
       </div>
       <div class="col py-3">
         <div class="container">
-          <p>content</p>
+         <router-outlet></router-outlet>
         </div>
       </div>
   </div>

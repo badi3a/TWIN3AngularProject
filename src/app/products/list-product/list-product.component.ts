@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import {Product} from "../../core/model/product";
 @Component({
   selector: 'app-list-product',
@@ -9,9 +10,10 @@ export class ListProductComponent implements OnInit {
   public title: String;
   public list: Product[];
   priceMax: number;
-  constructor() {
+  constructor(private route: ActivatedRoute) {
   }
   ngOnInit(): void {
+    console.log(this.route.snapshot.params['category'])
     this.title= 'My App Store';
     this.list=[
       {id:15,
