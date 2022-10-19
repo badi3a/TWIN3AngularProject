@@ -1,3 +1,4 @@
+
 import { User } from '../../core/model/user';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListUserComponent implements OnInit {
   list: User[]
-  constructor() { }
+  constructor() {
+
+   }
   ngOnInit(): void {
     this.list=[
       {
