@@ -1,0 +1,31 @@
+<h1>List Product</h1>
+<table class="table">
+<thead>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>price</th>
+    <th>quantity</th>
+    <th>nbLike</th>
+    <th>action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let p of list">
+    <td>{{p.id}}</td>
+    <td>{{p.title}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.quantity}}</td>
+    <td>{{p.nbrLike}}</td>
+    <td>
+      <button class="btn btn-sm btn-danger">
+        delete
+      </button>
+      &nbsp;
+      <button class="btn btn-sm btn-warning">
+        update
+      </button>
+    </td>
+  </tr>
+</tbody>
+</table>
