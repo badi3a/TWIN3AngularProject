@@ -18,9 +18,9 @@ export class FormProductComponent implements OnInit {
     this.product= new Product()
   }
   saveProduct(){
+    //this.product.nbrLike=0;
     this.productService.listProduct.push(this.product);
     this.route.navigate(['product/list'])
-
   }
 
 }
