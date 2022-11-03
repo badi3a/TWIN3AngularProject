@@ -1,0 +1,17 @@
+<form [formGroup]="loginForm">
+  <div class="form-group">
+    <label>email</label>
+    <input type="text" formControlName="email" name="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>password</label>
+    <input type="password" name="password" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-success">
+    save
+  </button>
+  &nbsp;
+  <button type="reset" class="btn btn-warning">
+    reset
+  </button>
+</form>
