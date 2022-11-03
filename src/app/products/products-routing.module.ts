@@ -11,6 +11,7 @@ const routes: Routes = [
     {path:'new', component: FormProductComponent},
     {path:'category/:category', component:ListProductComponent},
     {path:'outofstock', component: AdminProductComponent},
+    {path:'new_product/:id', component: FormProductComponent}
   ] },
 
                     ];

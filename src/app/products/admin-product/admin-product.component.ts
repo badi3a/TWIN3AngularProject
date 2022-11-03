@@ -24,4 +24,5 @@ export class AdminProductComponent implements OnInit {
     this.productService.listProduct.splice(index, 1)
   }
 
+
 }
