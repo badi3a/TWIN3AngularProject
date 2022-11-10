@@ -2,7 +2,9 @@ import { ProductsModule } from './../../products/products.module';
 import { Product } from './../model/product';
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ProductService {
   public listProduct : Product[] =[
     {id:15,

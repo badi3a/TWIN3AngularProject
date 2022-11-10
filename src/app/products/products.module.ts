@@ -23,9 +23,6 @@ import { ProductService } from '../core/services/product.service';
     CommonModule,
     ProductsRoutingModule,
     FormsModule
-  ],
-  providers:[
-    ProductService
   ]
 })
 export class ProductsModule { }
