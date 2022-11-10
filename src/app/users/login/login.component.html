@@ -1,13 +1,30 @@
-<form [formGroup]="loginForm">
+<form [formGroup]="loginForm" (ngSubmit)="verifyLogin()">
   <div class="form-group">
     <label>email</label>
     <input type="text" formControlName="email" name="email" class="form-control">
+    <div class="alert alert-danger" *ngIf="loginForm.controls['email'].invalid
+    && loginForm.controls['email'].touched">
+      <div  *ngIf="loginForm.controls['email'].hasError('required')">
+        this field is required
+      </div>
+      <div *ngIf="loginForm.controls['email'].hasError('email')">
+        email invalid
+      </div>
+    </div>
   </div>
   <div class="form-group">
     <label>password</label>
-    <input type="password" name="password" class="form-control">
+    <input type="password" formControlName="password" name="password" class="form-control">
+    <div class="alert alert-danger" *ngIf="loginForm.controls['password'].invalid">
+      <div  *ngIf="loginForm.controls['password'].hasError('required')">
+        this field is required
+      </div>
+      <div *ngIf="loginForm.controls['password'].hasError('minlength')">
+        minlength = 3!
+      </div>
+    </div>
   </div>
-  <button type="submit" class="btn btn-success">
+  <button type="submit" class="btn btn-success" [disabled]="loginForm.invalid">
     save
   </button>
   &nbsp;
