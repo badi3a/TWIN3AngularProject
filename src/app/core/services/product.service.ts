@@ -1,11 +1,13 @@
 import { Product } from './../model/product';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  public listProduct : Product[] =[
+ /* public listProduct : Product[] =[
     {id:15,
       title: 'Outfit 3',
       price: 280,
@@ -41,7 +43,19 @@ export class ProductService {
       category: 'men',
       quantity: 0,
       picture:'http://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F42%2F31%2F4231ea87da0d835e0a19486450d2d233cfdc2564.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]'}
-    ];
-
-  constructor() { }
+    ];*/
+  public uri= environment.uri+'products/'
+  constructor(private http: HttpClient) { }
+  getAllProduct(){
+     return this.http.get<Product[]>(this.uri)
+  }
+  addProduct(p:Product){
+    return this.http.post(this.uri, p)
+  }
+  deleteProduct(id:number){
+    return this.http.delete(this.uri+id)
+  }
+  updateProduct(p:Product){
+    return this.http.put(this.uri+p.id,p)
+  }
 }

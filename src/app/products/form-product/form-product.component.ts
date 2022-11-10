@@ -19,8 +19,12 @@ export class FormProductComponent implements OnInit {
   }
   saveProduct(){
     //this.product.nbrLike=0;
-    this.productService.listProduct.push(this.product);
-    this.route.navigate(['product/list'])
+    this.productService.addProduct(this.product).subscribe(
+      ()=>this.route.navigate(['product/list']),
+      ()=>{console.log('error'),
+      ()=>{console.log('complete')}}
+    )
+
   }
 
 }

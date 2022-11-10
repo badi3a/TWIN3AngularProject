@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "title": "test",
+      "price": 12,
+      "quantity": 123,
+      "picture": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F49%2F56%2F49560dfa45732ed844e8e4742afdca248ee60f9f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "nbrLike": 0,
+      "id": 1,
+      "category": "men"
+    },
+    {
+      "category": "women",
+      "title": "test",
+      "price": 12,
+      "quantity": 123,
+      "picture": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F49%2F56%2F49560dfa45732ed844e8e4742afdca248ee60f9f.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "nbrLike": 1,
+      "id": 2
+    }
+  ],
+  "users": []
+}
