@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UsersComponent } from './users.component';
 import { LoginComponent } from './login/login.component';
+import { LoginTestComponent } from './login-test/login-test.component';
 
 const routes: Routes = [
   { path: '', component: UsersComponent, children:[
@@ -13,8 +14,7 @@ const routes: Routes = [
     {path:'new',component:FormUserComponent},
     {path:'list/profile/:id', component: ProfileComponent},
   ]},
-  {path:'login', component: LoginComponent}
-
+  {path:'login', component: LoginTestComponent}
 ];
 
 @NgModule({

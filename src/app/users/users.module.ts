@@ -9,6 +9,7 @@ import { FormUserComponent } from './form-user/form-user.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { TestComponent } from './test/test.component';
+import { LoginTestComponent } from './login-test/login-test.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TestComponent } from './test/test.component';
     FormUserComponent,
     LoginComponent,
     RegisterComponent,
-    TestComponent
+    TestComponent,
+    LoginTestComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,20 @@
+<form [formGroup]="formLogin" (ngSubmit)="verifyLogin()">
+  <label>
+    email
+  </label>
+  <input type="email" formControlName="email" name="email">
+  <div *ngIf="formLogin.controls['email'].invalid">
+      <p *ngIf="formLogin.controls['email'].hasError('required')">
+        this field is required
+      </p>
+      <p *ngIf="formLogin.controls['email'].hasError('email')">
+        email invalid
+      </p>
+  </div>
+  <br>
+  <label>password</label>
+  <input type="password" formControlName="password" name="password">
+  <button type="submit" [disabled]="formLogin.invalid" >
+    save
+  </button>
+</form>
