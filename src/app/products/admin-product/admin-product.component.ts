@@ -13,9 +13,10 @@ export class AdminProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.productService.getAllProduct().subscribe(
-      (data:Product[])=>this.list=data
+      (data:Product[])=>{
+        this.list=data
+        this.list = this.list.filter(p => p.quantity == 0);}
     )
-    this.list = this.list.filter(p => p.quantity == 0);
   }
 
   delete(p: Product) {

@@ -58,4 +58,7 @@ export class ProductService {
   updateProduct(p:Product){
     return this.http.put(this.uri+p.id,p)
   }
+  getProductById(id:number){
+    return this.http.get<Product>(this.uri+id)
+  }
 }

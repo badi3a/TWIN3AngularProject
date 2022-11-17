@@ -45,16 +45,22 @@ export class ListProductComponent implements OnInit {
   incrementLike(product: Product): void{
     let i= this.list.indexOf(product);
     if(i!=-1){
-      this.list[i].nbrLike++
+     // this.list[i].nbrLike++
       //connect to the backend side
+      product.nbrLike++
+      this.productService.updateProduct(product).subscribe();
     }
   }
   buyProduct(product: Product): void{
     let i= this.list.indexOf(product);
     if(i!=-1){
-      this.list[i].quantity--
+      //this.list[i].quantity--
       //connect to the backend side
-      this.count=this.stats.getCount(this.all,'quantity',0)
+      product.quantity--;
+
+      this.productService.updateProduct(product).subscribe(
+        ()=>{this.count=this.stats.getCount(this.all,'quantity',0)}
+      );
     }
   }
 }
