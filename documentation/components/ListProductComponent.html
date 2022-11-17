@@ -1,0 +1,824 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>twin3-project documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">twin3-project documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ListProductComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/products/list-product/list-product.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-list-product</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./list-product.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./list-product.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#all" >all</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#count" >count</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#list" >list</a>
+                            </li>
+                            <li>
+                                <a href="#priceMax" >priceMax</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#title" >title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#buyProduct" >buyProduct</a>
+                            </li>
+                            <li>
+                                <a href="#incrementLike" >incrementLike</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, stats: <a href="../injectables/StatsService.html" target="_self">StatsService</a>, productService: <a href="../injectables/ProductService.html" target="_self">ProductService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/products/list-product/list-product.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>stats</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/StatsService.html" target="_self" >StatsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>productService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProductService.html" target="_self" >ProductService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buyProduct"></a>
+                    <span class="name">
+                        <span ><b>buyProduct</b></span>
+                        <a href="#buyProduct"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>buyProduct(product: <a href="../classes/Product.html" target="_self">Product</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/products/list-product/list-product.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>product</td>
+                                    <td>
+                                                <code><a href="../classes/Product.html" target="_self" >Product</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="incrementLike"></a>
+                    <span class="name">
+                        <span ><b>incrementLike</b></span>
+                        <a href="#incrementLike"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>incrementLike(product: <a href="../classes/Product.html" target="_self">Product</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/products/list-product/list-product.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>product</td>
+                                    <td>
+                                                <code><a href="../classes/Product.html" target="_self" >Product</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/products/list-product/list-product.component.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="all"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>all</b></span>
+                        <a href="#all"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Product.html" target="_self" >Product[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/products/list-product/list-product.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="count"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>count</b></span>
+                        <a href="#count"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/products/list-product/list-product.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="list"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>list</b></span>
+                        <a href="#list"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Product.html" target="_self" >Product[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/products/list-product/list-product.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="priceMax"></a>
+                    <span class="name">
+                        <span ><b>priceMax</b></span>
+                        <a href="#priceMax"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/products/list-product/list-product.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="title"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>title</b></span>
+                        <a href="#title"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/products/list-product/list-product.component.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ProductService } from &#x27;./../../core/services/product.service&#x27;;
+import { StatsService } from &#x27;./../../core/services/stats.service&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import {Product} from &quot;../../core/model/product&quot;;
+@Component({
+  selector: &#x27;app-list-product&#x27;,
+  templateUrl: &#x27;./list-product.component.html&#x27;,
+  styleUrls: [&#x27;./list-product.component.css&#x27;]
+})
+export class ListProductComponent implements OnInit {
+  public title: String;
+  public list: Product[];
+  public all: Product[];
+  priceMax: number;
+  public count: number;
+  constructor(private route: ActivatedRoute,
+    private stats: StatsService, private productService:ProductService) {
+  }
+  ngOnInit(): void {
+    //category
+    console.log(this.route);
+    //let category&#x3D; this.route.snapshot.params[&#x27;category&#x27;];
+    this.title&#x3D; &#x27;My App Store&#x27;;
+    this.productService.getAllProduct().subscribe(
+      (data: Product[])&#x3D;&gt;{
+        this.all&#x3D; data;
+        this.route.params.subscribe(
+          (params)&#x3D;&gt;{
+            if(params[&#x27;category&#x27;]!&#x3D;null){
+              this.list&#x3D; this.all.filter((product)&#x3D;&gt;
+                product.category&#x3D;&#x3D;params[&#x27;category&#x27;]
+               )
+            }else{
+              this.list&#x3D; this.all
+            }
+          }
+        )
+        this.count&#x3D;this.stats.getCount(this.all,&#x27;quantity&#x27;,0)}
+    );
+
+
+  }
+
+  incrementLike(product: Product): void{
+    let i&#x3D; this.list.indexOf(product);
+    if(i!&#x3D;-1){
+     // this.list[i].nbrLike++
+      //connect to the backend side
+      product.nbrLike++
+      this.productService.updateProduct(product).subscribe();
+    }
+  }
+  buyProduct(product: Product): void{
+    let i&#x3D; this.list.indexOf(product);
+    if(i!&#x3D;-1){
+      //this.list[i].quantity--
+      //connect to the backend side
+      product.quantity--;
+
+      this.productService.updateProduct(product).subscribe(
+        ()&#x3D;&gt;{this.count&#x3D;this.stats.getCount(this.all,&#x27;quantity&#x27;,0)}
+      );
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;h1&gt;{{title}}&lt;/h1&gt;
+&lt;div class&#x3D;&quot;alert alert-danger&quot; *ngIf&#x3D;&quot;count!&#x3D;0&quot;&gt;
+  {{count}} products out of stock &lt;a routerLink&#x3D;&quot;/product/outofstock&quot;&gt;More details&lt;/a&gt;
+&lt;/div&gt;
+&lt;form class&#x3D;&quot;col-md-6&quot;&gt;
+  &lt;input type&#x3D;&quot;number&quot; [(ngModel)]&#x3D;&quot;priceMax&quot;
+  name&#x3D;&quot;price&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;search by price&quot;&gt;
+&lt;/form&gt;
+&lt;br&gt;
+&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;col-md-8 col-xl-4&quot; *ngFor&#x3D;&quot;let product of list&quot; &gt;
+    &lt;div class&#x3D;&quot;card&quot; style&#x3D;&quot;width: 18rem;&quot; *ngIf&#x3D;&quot;product.price&lt;&#x3D;priceMax || priceMax&#x3D;&#x3D;null&quot;&gt; &lt;!---filter---&gt;
+      &lt;img src&#x3D;&quot;{{product.picture}}&quot; class&#x3D;&quot;card-img-top&quot; alt&#x3D;&quot;...&quot;&gt;
+      &lt;div class&#x3D;&quot;card-body&quot;&gt;
+        &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{product.title}}&lt;/h5&gt;
+
+        &lt;p class&#x3D;&quot;card-text&quot;&gt;
+          {{product.description}} &lt;img src&#x3D;&quot;assets/stock.jpg&quot; class&#x3D;&quot;stock btnBuy&quot; *ngIf&#x3D;&quot;product.quantity&#x3D;&#x3D;0&quot; &gt;
+          &lt;br&gt;
+          &lt;strong&gt;price &lt;/strong&gt;{{product.price}}$
+        &lt;/p&gt;
+        &lt;button class&#x3D;&quot;btn btn-sm btn-danger&quot; (click)&#x3D;&quot;incrementLike(product)&quot; &gt;
+          &lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; width&#x3D;&quot;16&quot; height&#x3D;&quot;16&quot; fill&#x3D;&quot;currentColor&quot; class&#x3D;&quot;bi bi-hand-thumbs-up&quot; viewBox&#x3D;&quot;0 0 16 16&quot;&gt;
+            &lt;path d&#x3D;&quot;M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z&quot;/&gt;
+          &lt;/svg&gt;
+          {{product.nbrLike}}
+        &lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn btn-sm btn-warning btnBuy&quot;
+                (click)&#x3D;&quot;buyProduct(product)&quot;
+                [disabled]&#x3D;&quot;product.quantity&#x3D;&#x3D;0&quot;&gt;
+          buy
+        &lt;/button&gt;
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;br&gt;&lt;br&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;br&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./list-product.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.btnBuy{
+  float: right;
+}
+.stock{
+  width: 20%;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><h1>{{title}}</h1><div class="alert alert-danger" *ngIf="count!=0">  {{count}} products out of stock <a routerLink="/product/outofstock">More details</a></div><form class="col-md-6">  <input type="number" [(ngModel)]="priceMax"  name="price" class="form-control" placeholder="search by price"></form><br><div class="row">  <div class="col-md-8 col-xl-4" *ngFor="let product of list" >    <div class="card" style="width: 18rem;" *ngIf="product.price<=priceMax || priceMax==null"> <!---filter--->      <img src="{{product.picture}}" class="card-img-top" alt="...">      <div class="card-body">        <h5 class="card-title">{{product.title}}</h5>        <p class="card-text">          {{product.description}} <img src="assets/stock.jpg" class="stock btnBuy" *ngIf="product.quantity==0" >          <br>          <strong>price </strong>{{product.price}}$        </p>        <button class="btn btn-sm btn-danger" (click)="incrementLike(product)" >          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">            <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>          </svg>          {{product.nbrLike}}        </button>        <button class="btn btn-sm btn-warning btnBuy"                (click)="buyProduct(product)"                [disabled]="product.quantity==0">          buy        </button>      </div>    </div>    <br><br>  </div></div><br></div>'
+    var COMPONENTS = [{'name': 'AdminProductComponent', 'selector': 'app-admin-product'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'DetailProductComponent', 'selector': 'app-detail-product'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FormProductComponent', 'selector': 'app-form-product'},{'name': 'FormUserComponent', 'selector': 'app-form-user'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListProductComponent', 'selector': 'app-list-product'},{'name': 'ListUserComponent', 'selector': 'app-list-user'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LoginTestComponent', 'selector': 'app-login-test'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ProductsComponent', 'selector': 'app-products'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'TestComponent', 'selector': 'app-test'},{'name': 'UsersComponent', 'selector': 'app-users'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ListProductComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ListProductComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

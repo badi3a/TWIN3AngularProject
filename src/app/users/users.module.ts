@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { TestComponent } from './test/test.component';
 import { LoginTestComponent } from './login-test/login-test.component';
+import { UserService } from '../core/services/user.service';
 
 
 @NgModule({
@@ -28,6 +29,9 @@ import { LoginTestComponent } from './login-test/login-test.component';
     UsersRoutingModule,
     FormsModule,
     ReactiveFormsModule
+  ],
+  providers:[
+    UserService
   ]
 })
 export class UsersModule { }

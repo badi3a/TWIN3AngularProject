@@ -1,9 +1,7 @@
 import { User } from './../model/user';
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class UserService {
   list: User[]=[
     {
